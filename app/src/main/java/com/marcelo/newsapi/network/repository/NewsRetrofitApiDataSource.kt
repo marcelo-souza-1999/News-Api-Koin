@@ -1,8 +1,8 @@
-package com.marcelo.newsapi.data.repository
+package com.marcelo.newsapi.network.repository
 
 import com.haroldadmin.cnradapter.NetworkResponse
-import com.marcelo.newsapi.data.model.NewsResult
-import com.marcelo.newsapi.data.services.NewsApiClient
+import com.marcelo.newsapi.models.NewsResult
+import com.marcelo.newsapi.network.services.NewsApiClient
 
 class NewsRetrofitApiDataSource (private val newsApiClient: NewsApiClient) : NewsApiDataSource {
 

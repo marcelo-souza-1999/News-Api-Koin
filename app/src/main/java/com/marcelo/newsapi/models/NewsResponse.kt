@@ -1,5 +1,6 @@
-package com.marcelo.newsapi.data.model
+package com.marcelo.newsapi.models
 
+import com.marcelo.newsapi.data.models.Article
 import com.squareup.moshi.Json
 
 data class NewsResponse(

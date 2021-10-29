@@ -4,12 +4,12 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.marcelo.newsapi.data.model.Article
-import com.marcelo.newsapi.data.model.NewsResult
-import com.marcelo.newsapi.data.repository.NewsRepositoryInterface
+import com.marcelo.newsapi.data.models.Article
+import com.marcelo.newsapi.models.NewsResult
+import com.marcelo.newsapi.network.repository.NewsRepository
 import kotlinx.coroutines.launch
 
-class NewsViewModel (private val newsRepository: NewsRepositoryInterface) : ViewModel() {
+class NewsViewModel (private val newsRepository: NewsRepository) : ViewModel() {
 
     private val _articlesEvent = MutableLiveData<List<Article>>()
     val articlesEvent: LiveData<List<Article>>
