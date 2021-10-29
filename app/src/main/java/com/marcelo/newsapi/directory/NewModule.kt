@@ -22,12 +22,11 @@ val repositoryModule = module {
     }
 
     single <NewsApiDataSource> { NewsRetrofitApiDataSource(get()) }
-
-    viewModel {
-        NewsViewModel(get())
-    }
 }
 
 val viewModelModule = module {
 
+    viewModel {
+        NewsViewModel(get())
+    }
 }
