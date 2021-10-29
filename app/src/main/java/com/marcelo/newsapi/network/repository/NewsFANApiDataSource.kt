@@ -1,11 +1,11 @@
-package com.marcelo.newsapi.data.repository
+package com.marcelo.newsapi.network.repository
 
 import com.androidnetworking.AndroidNetworking
 import com.androidnetworking.error.ANError
 import com.androidnetworking.interfaces.ParsedRequestListener
 import com.marcelo.newsapi.BuildConfig
-import com.marcelo.newsapi.data.model.NewsResponse
-import com.marcelo.newsapi.data.model.NewsResult
+import com.marcelo.newsapi.models.NewsResponse
+import com.marcelo.newsapi.models.NewsResult
 import kotlin.coroutines.suspendCoroutine
 
 class NewsFANApiDataSource : NewsApiDataSource {

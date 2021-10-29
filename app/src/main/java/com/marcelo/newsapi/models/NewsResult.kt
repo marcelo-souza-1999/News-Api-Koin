@@ -1,4 +1,6 @@
-package com.marcelo.newsapi.data.model
+package com.marcelo.newsapi.models
+
+import com.marcelo.newsapi.data.models.Article
 
 sealed class NewsResult {
     class Success(val articles: List<Article>) : NewsResult()

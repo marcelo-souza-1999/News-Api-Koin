@@ -1,8 +1,8 @@
-package com.marcelo.newsapi.data.services
+package com.marcelo.newsapi.network.services
 
 import com.marcelo.newsapi.BuildConfig
-import com.marcelo.newsapi.data.model.ErrorResponse
-import com.marcelo.newsapi.data.model.NewsResponse
+import com.marcelo.newsapi.data.models.ErrorResponse
+import com.marcelo.newsapi.models.NewsResponse
 import com.haroldadmin.cnradapter.NetworkResponse
 import retrofit2.http.GET
 import retrofit2.http.Query

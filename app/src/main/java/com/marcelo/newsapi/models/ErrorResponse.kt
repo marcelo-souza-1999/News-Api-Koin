@@ -1,4 +1,4 @@
-package com.marcelo.newsapi.data.model
+package com.marcelo.newsapi.data.models
 
 import com.squareup.moshi.Json
 
