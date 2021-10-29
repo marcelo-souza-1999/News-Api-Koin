@@ -3,6 +3,7 @@ package com.marcelo.newsapi.app
 import android.app.Application
 import com.marcelo.newsapi.directory.networkModule
 import com.marcelo.newsapi.directory.repositoryModule
+import com.marcelo.newsapi.directory.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -17,7 +18,8 @@ class NewsApiApp : Application() {
             androidContext(this@NewsApiApp)
             modules(listOf(
                 networkModule,
-                repositoryModule
+                repositoryModule,
+                viewModelModule
             ))
         }
     }
